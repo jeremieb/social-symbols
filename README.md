@@ -7,7 +7,10 @@
 
 ## Available logos
 
+<img width="1863" alt="Screenshot 2023-01-26 at 13 37 59" src="https://user-images.githubusercontent.com/736246/214839551-e66cf266-cf61-435c-924b-f5f78d4e0b30.png">
+
 ### Mastodon
 Only the outlined version doesn't support hiearchical rendering
 
-<img width="1863" alt="Screenshot 2023-01-26 at 13 37 59" src="https://user-images.githubusercontent.com/736246/214839551-e66cf266-cf61-435c-924b-f5f78d4e0b30.png">
+### GitHub
+Filled version only (Cannot convert an opened shape as outlined).
