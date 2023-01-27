@@ -5,13 +5,16 @@
 1. From XCode, just add a new "Symbol Image Set" in your Assets catalog.
 2. Then import the symbol directly and start to use it.
 
-<img width="1863" alt="Screenshot 2023-01-26 at 13 37 59" src="https://user-images.githubusercontent.com/736246/214839551-e66cf266-cf61-435c-924b-f5f78d4e0b30.png">
+<img width="2160" alt="Screenshot 2023-01-27 at 16 16 07" src="https://user-images.githubusercontent.com/736246/215121008-bde182e3-acd3-4a35-8ec8-96e15ff91b23.png">
 
 ## Available logos
 
 ### Mastodon
-- Only the outlined version doesn't support hiearchical rendering.
+- Only the outlined version doesn't support hierarchical rendering.
 - Cleaned logo version (the one from joinmastodon.org).
 
 ### GitHub
 - Filled version only (Cannot convert an opened shape as outlined).
+
+### Discord
+- Filled and outlined supporting hierarchical rendering.
