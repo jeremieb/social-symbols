@@ -14,4 +14,4 @@
 - Cleaned logo version (the one from joinmastodon.org).
 
 ### GitHub
-Filled version only (Cannot convert an opened shape as outlined).
+- Filled version only (Cannot convert an opened shape as outlined).
