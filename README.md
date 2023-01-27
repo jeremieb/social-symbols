@@ -10,7 +10,8 @@
 ## Available logos
 
 ### Mastodon
-Only the outlined version doesn't support hiearchical rendering
+- Only the outlined version doesn't support hiearchical rendering.
+- Cleaned logo version (the one from joinmastodon.org).
 
 ### GitHub
 Filled version only (Cannot convert an opened shape as outlined).
