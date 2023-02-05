@@ -1,0 +1,12 @@
+{
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  },
+  "symbols" : [
+    {
+      "filename" : "discours.fill.svg",
+      "idiom" : "universal"
+    }
+  ]
+}
