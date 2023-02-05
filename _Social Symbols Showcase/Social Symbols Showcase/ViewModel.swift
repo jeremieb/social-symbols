@@ -16,6 +16,8 @@ class ViewModel: ObservableObject {
         .init(name: "Mastodon", file: "mastodon"),
         .init(name: "Mastodon fill", file: "mastodon.fill"),
         .init(name: "Mastodon Clean", file: "mastodon.clean"),
-        .init(name: "Mastodon Clean fill", file: "mastodon.clean.fill")
+        .init(name: "Mastodon Clean fill", file: "mastodon.clean.fill"),
+//        .init(name: "YouTube", file: "youtube"),
+        .init(name: "YouTube fill", file: "youtube.fill")
     ]
 }
