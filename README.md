@@ -5,7 +5,7 @@
 1. From XCode, just add a new "Symbol Image Set" in your Assets catalog.
 2. Then import the symbol directly and start to use it.
 
-<img width="2412" alt="Screenshot 2023-02-04 at 08 57 58" src="https://user-images.githubusercontent.com/736246/216756153-3f43e737-97e6-4a43-b85e-825d256cbbd8.png">
+<img width="1806" alt="Screenshot 2023-02-05 at 11 36 31" src="https://user-images.githubusercontent.com/736246/216814133-ec15bad8-e970-425a-93a2-27e8a595e7cf.png">
 
 ## Available logos
 
