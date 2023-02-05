@@ -72,7 +72,7 @@ struct ContentView: View {
                         Image(symbol.file)
                             .font(style.style)
                     }
-                }.symbolRenderingMode(.palette).foregroundStyle(.pink, .orange)
+                }.symbolRenderingMode(.palette).foregroundStyle(.pink, .orange, .blue)
             }
             
             Section(header: Text("Multicolor"), footer: Text("Using official brand colors")) {
