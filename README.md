@@ -25,3 +25,7 @@
 ### Discord
 - Filled and outlined supporting hierarchical rendering.
 - Multicolor rendering with official colors.
+
+### YouTube
+- Filled and outlined supporting hierarchical rendering.
+- Multicolor rendering with official colors.
