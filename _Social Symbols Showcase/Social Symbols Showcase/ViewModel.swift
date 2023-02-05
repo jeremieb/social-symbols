@@ -11,7 +11,7 @@ class ViewModel: ObservableObject {
     @Published var symbols: [Symbol] = [
         .init(name: "Discord", file: "discord"),
         .init(name: "Discord.fill", file: "discord.fill"),
-        .init(name: "Discourse.fill", file: "discours.fill"),
+        .init(name: "Discourse.fill", file: "discourse.fill"),
         .init(name: "GitHub.fill", file: "github.fill"),
         .init(name: "Mastodon", file: "mastodon"),
         .init(name: "Mastodon.fill", file: "mastodon.fill"),
