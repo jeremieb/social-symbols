@@ -19,6 +19,7 @@ class ViewModel: ObservableObject {
         .init(name: "Mastodon Clean.fill", file: "mastodon.clean.fill"),
         .init(name: "Reddit", file: "reddit"),
         .init(name: "Reddit.fill", file: "reddit.fill"),
+        .init(name: "Twitch", file: "twitch"),
         .init(name: "YouTube", file: "youtube"),
         .init(name: "YouTube.fill", file: "youtube.fill")
     ]
