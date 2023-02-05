@@ -18,7 +18,7 @@
 - Filled version only (Cannot convert an opened shape as outlined).
 - Multicolor rendering with official colors.
 
-### Discours
+### Discourse
 - Filled version only (Cannot convert an opened shape as outlined).
 - Multicolor rendering with official colors.
 
