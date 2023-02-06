@@ -21,6 +21,7 @@ class ViewModel: ObservableObject {
         .init(name: "Reddit.fill", file: "reddit.fill"),
         .init(name: "Twitch", file: "twitch"),
         .init(name: "Twitter", file: "twitter"),
+        .init(name: "Tweetie", file: "tweetie"),
         .init(name: "YouTube", file: "youtube"),
         .init(name: "YouTube.fill", file: "youtube.fill")
     ]
