@@ -13,12 +13,21 @@
 - Cleaned logo version (the one from joinmastodon.org).
 - Multicolor rendering with official colors.
 
+### Facebook
+- Supporting hierarchical rendering.
+- Multicolor rendering with official colors.
+
 ### GitHub
 - Supporting hierarchical rendering.
 - Multicolor rendering with official colors.
 
+### Instagram
+- Supporting hierarchical rendering.
+- Multicolor rendering with the pink Instagram color.
+- Please use the palette rendering to create a gradient reproducing the official brand.
+
 ### Discourse
-- Filled version only (Cannot convert an opened shape as outlined).
+- Filled version only.
 - Multicolor rendering with official colors.
 
 ### Discord
@@ -28,6 +37,13 @@
 ### Twitch
 - Supporting hierarchical rendering.
 - Multicolor rendering with official colors.
+
+### Twitter
+- Supporting hierarchical rendering.
+- Multicolor rendering with official colors.
+
+### Dead Tweetie
+- Supporting hierarchical rendering.
 
 ### Reddit
 - Filled and outlined supporting hierarchical rendering.
