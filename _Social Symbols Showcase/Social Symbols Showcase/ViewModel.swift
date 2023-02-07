@@ -12,7 +12,9 @@ class ViewModel: ObservableObject {
         .init(name: "Discord", file: "discord"),
         .init(name: "Discord.fill", file: "discord.fill"),
         .init(name: "Discourse.fill", file: "discourse.fill"),
-        .init(name: "GitHub.fill", file: "github.fill"),
+        .init(name: "Facebook", file: "facebook"),
+        .init(name: "GitHub", file: "github"),
+        .init(name: "Instagram", file: "instagram"),
         .init(name: "Mastodon", file: "mastodon"),
         .init(name: "Mastodon.fill", file: "mastodon.fill"),
         .init(name: "Mastodon Clean", file: "mastodon.clean"),
@@ -20,6 +22,8 @@ class ViewModel: ObservableObject {
         .init(name: "Reddit", file: "reddit"),
         .init(name: "Reddit.fill", file: "reddit.fill"),
         .init(name: "Twitch", file: "twitch"),
+        .init(name: "Twitter", file: "twitter"),
+        .init(name: "Tweetie", file: "tweetie"),
         .init(name: "YouTube", file: "youtube"),
         .init(name: "YouTube.fill", file: "youtube.fill")
     ]
