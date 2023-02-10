@@ -16,6 +16,7 @@ class ViewModel: ObservableObject {
         .init(name: "GitHub", file: "github"),
         .init(name: "Instagram", file: "instagram"),
         .init(name: "Mastodon", file: "mastodon"),
+        .init(name: "Made In Amsterdam", file: "made.in.amsterdam"),
         .init(name: "Mastodon.fill", file: "mastodon.fill"),
         .init(name: "Mastodon Clean", file: "mastodon.clean"),
         .init(name: "Mastodon Clean.fill", file: "mastodon.clean.fill"),
