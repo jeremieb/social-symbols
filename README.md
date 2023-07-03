@@ -54,7 +54,7 @@
 - Multicolor rendering with official colors.
 
 ## License
-Social Symbol is available under the MIT license.
+Social Symbol is available under the Apache-2.0 license.
 
 
     THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
