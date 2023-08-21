@@ -34,6 +34,9 @@
 - Filled and outlined supporting hierarchical rendering.
 - Multicolor rendering with official colors.
 
+### Telegram
+- Multicolor rendering with official colors.
+
 ### Threads
 - Multicolor rendering with official colors.
 
