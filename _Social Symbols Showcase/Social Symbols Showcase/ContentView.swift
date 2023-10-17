@@ -26,7 +26,9 @@ struct ContentView: View {
                     }.frame(maxWidth: .infinity).foregroundColor(.accentColor)
                 }.listRowInsets(.init()).listRowBackground(Color.clear).listRowSeparator(.hidden)
             }
+            #if os(iOS)
             .navigationBarTitleDisplayMode(.large)
+            #endif
             .navigationTitle("Social Symbols")
         }
     }
