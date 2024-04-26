@@ -40,6 +40,10 @@
 ### Threads
 - Multicolor rendering with official colors.
 
+### Tiktok
+- Filled version
+- Multicolored version with official colors.
+
 ### Twitch
 - Supporting hierarchical rendering.
 - Multicolor rendering with official colors.
