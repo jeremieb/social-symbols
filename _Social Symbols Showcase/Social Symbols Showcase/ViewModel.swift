@@ -24,6 +24,7 @@ class ViewModel: ObservableObject {
         .init(name: "Matrix", file: "matrix"),
         .init(name: "Reddit", file: "reddit"),
         .init(name: "Reddit.fill", file: "reddit.fill"),
+        .init(name: "Slack", file: "slack"),
         .init(name: "Telegram", file: "telegram"),
         .init(name: "Tiktok", file: "tiktok"),
         .init(name: "Tiktok Official", file: "tiktok-official"),
