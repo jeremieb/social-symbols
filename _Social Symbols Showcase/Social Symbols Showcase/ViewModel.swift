@@ -23,6 +23,7 @@ class ViewModel: ObservableObject {
         .init(name: "Mastodon Clean", file: "mastodon.clean"),
         .init(name: "Mastodon Clean.fill", file: "mastodon.clean.fill"),
         .init(name: "Matrix", file: "matrix"),
+        .init(name: "Micro.Blog", file: "microblog"),
         .init(name: "Reddit", file: "reddit"),
         .init(name: "Reddit.fill", file: "reddit.fill"),
         .init(name: "Slack", file: "slack"),

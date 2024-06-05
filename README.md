@@ -9,11 +9,15 @@
 
 ## Available logos
 
-### Mastodon
-- Cleaned logo version (the one from joinmastodon.org).
+### Bluesky
 - Multicolor rendering with official colors.
 
-### Bluesky
+### Discord
+- Filled and outlined supporting hierarchical rendering.
+- Multicolor rendering with official colors.
+
+### Discourse
+- Filled version only.
 - Multicolor rendering with official colors.
 
 ### Facebook
@@ -29,12 +33,27 @@
 - Multicolor rendering with the pink Instagram color.
 - Please use the palette rendering to create a gradient reproducing the official brand.
 
-### Discourse
-- Filled version only.
+### LinkedIn
+- Multicolor rendering with the pink Instagram color.
+
+### Made in Amsterdam
+- Custom made badge
+
+### Mastodon
+- Cleaned logo version (the one from joinmastodon.org).
 - Multicolor rendering with official colors.
 
-### Discord
+### Matrix
+- Multicolor rendering with official colors.
+
+### Microblog
+- Multicolor rendering with official colors.
+
+### Reddit
 - Filled and outlined supporting hierarchical rendering.
+- Multicolor rendering with official colors.
+
+### Slack
 - Multicolor rendering with official colors.
 
 ### Telegram
@@ -57,13 +76,6 @@
 
 ### Dead Tweetie
 - Supporting hierarchical rendering.
-
-### Reddit
-- Filled and outlined supporting hierarchical rendering.
-- Multicolor rendering with official colors.
-
-### Slack
-- Multicolor rendering with official colors.
 
 ### YouTube
 - Filled and outlined supporting hierarchical rendering.
