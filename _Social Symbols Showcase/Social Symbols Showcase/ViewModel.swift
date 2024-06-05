@@ -9,6 +9,7 @@ import Foundation
 
 class ViewModel: ObservableObject {
     @Published var symbols: [Symbol] = [
+        .init(name: "Bluesky", file: "bluesky"),
         .init(name: "Discord", file: "discord"),
         .init(name: "Discord.fill", file: "discord.fill"),
         .init(name: "Discourse.fill", file: "discourse.fill"),

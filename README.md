@@ -13,6 +13,9 @@
 - Cleaned logo version (the one from joinmastodon.org).
 - Multicolor rendering with official colors.
 
+### Bluesky
+- Multicolor rendering with official colors.
+
 ### Facebook
 - Supporting hierarchical rendering.
 - Multicolor rendering with official colors.
