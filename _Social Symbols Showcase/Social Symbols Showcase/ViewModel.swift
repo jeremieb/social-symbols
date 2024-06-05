@@ -9,6 +9,7 @@ import Foundation
 
 class ViewModel: ObservableObject {
     @Published var symbols: [Symbol] = [
+        .init(name: "Bluesky", file: "bluesky"),
         .init(name: "Discord", file: "discord"),
         .init(name: "Discord.fill", file: "discord.fill"),
         .init(name: "Discourse.fill", file: "discourse.fill"),
@@ -22,8 +23,10 @@ class ViewModel: ObservableObject {
         .init(name: "Mastodon Clean", file: "mastodon.clean"),
         .init(name: "Mastodon Clean.fill", file: "mastodon.clean.fill"),
         .init(name: "Matrix", file: "matrix"),
+        .init(name: "Micro.Blog", file: "microblog"),
         .init(name: "Reddit", file: "reddit"),
         .init(name: "Reddit.fill", file: "reddit.fill"),
+        .init(name: "Slack", file: "slack"),
         .init(name: "Telegram", file: "telegram"),
         .init(name: "Tiktok", file: "tiktok"),
         .init(name: "Tiktok Official", file: "tiktok-official"),
