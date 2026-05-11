@@ -1,5 +1,11 @@
 @testable import SocialSymbols
 import XCTest
+#if canImport(UIKit)
+import UIKit
+#endif
+#if canImport(AppKit)
+import AppKit
+#endif
 
 final class SocialSymbolsTests: XCTestCase {
     func testTypedLogoUsesAssetName() {
@@ -38,4 +44,41 @@ final class SocialSymbolsTests: XCTestCase {
         XCTAssertNotNil(assetsCatalog)
         XCTAssertNotNil(facebookSymbol)
     }
+
+    #if canImport(UIKit)
+    func testUIKitImageLoadsTypedLogo() {
+        XCTAssertNotNil(UIImage.socialSymbol(.facebook))
+        XCTAssertNotNil(UIImage.socialSymbol(.snapchatFill))
+    }
+
+    func testUIKitImageLoadsFriendlyStringName() {
+        XCTAssertNotNil(UIImage.socialSymbol(named: "LinkedIn"))
+        XCTAssertNotNil(UIImage.socialSymbol(named: "Snapchat Fill"))
+        XCTAssertNil(UIImage.socialSymbol(named: "Unknown Brand"))
+    }
+    #endif
+
+    #if canImport(AppKit)
+    func testAppKitImageAPICompilesForTypedLogo() {
+        let facebook: NSImage? = NSImage.socialSymbol(.facebook)
+        let snapchatFill: NSImage? = NSImage.socialSymbol(.snapchatFill)
+
+        _ = facebook
+        _ = snapchatFill
+        XCTAssertTrue(true)
+    }
+
+    func testAppKitImageAPICompilesForFriendlyStringName() {
+        let linkedin: NSImage? = NSImage.socialSymbol(named: "LinkedIn")
+        let snapchatFill: NSImage? = NSImage.socialSymbol(named: "Snapchat Fill")
+
+        _ = linkedin
+        _ = snapchatFill
+        XCTAssertTrue(true)
+    }
+
+    func testAppKitImageReturnsNilForUnknownName() {
+        XCTAssertNil(NSImage.socialSymbol(named: "Unknown Brand"))
+    }
+    #endif
 }

@@ -1,5 +1,11 @@
 import Foundation
 import SwiftUI
+#if canImport(UIKit)
+import UIKit
+#endif
+#if canImport(AppKit)
+import AppKit
+#endif
 
 public struct SocialSymbol: View {
     static let fallbackSystemImageName = "questionmark.square.dashed"
@@ -24,7 +30,7 @@ public struct SocialSymbol: View {
     public var body: some View {
         Group {
             if let resolvedLogo {
-                resolvedLogo.image
+                resolvedLogo.swiftUIImage ?? Image(systemName: Self.fallbackSystemImageName)
             } else {
                 Image(systemName: Self.fallbackSystemImageName)
             }
@@ -70,18 +76,18 @@ public enum SocialLogo: String, CaseIterable {
         rawValue
     }
 
-    var image: Image {
+    var swiftUIImage: Image? {
         #if canImport(UIKit)
         if let uiImage = UIImage(named: assetName, in: .module, compatibleWith: nil) {
             Image(uiImage: uiImage)
         } else {
-            Image(systemName: SocialSymbol.fallbackSystemImageName)
+            nil
         }
         #elseif canImport(AppKit)
-        if let nsImage = Bundle.module.image(forResource: assetName) {
+        if let nsImage = NSImage(symbolName: assetName, bundle: .module, variableValue: 0) {
             Image(nsImage: nsImage)
         } else {
-            Image(systemName: SocialSymbol.fallbackSystemImageName)
+            nil
         }
         #else
         Image(assetName, bundle: .module)
@@ -219,3 +225,35 @@ public enum SocialLogo: String, CaseIterable {
         return String(String.UnicodeScalarView(scalars))
     }
 }
+
+#if canImport(UIKit)
+public extension UIImage {
+    static func socialSymbol(_ logo: SocialLogo) -> UIImage? {
+        UIImage(named: logo.assetName, in: .module, compatibleWith: nil)
+    }
+
+    static func socialSymbol(named name: String) -> UIImage? {
+        guard let logo = SocialLogo.resolve(name) else {
+            return nil
+        }
+
+        return socialSymbol(logo)
+    }
+}
+#endif
+
+#if canImport(AppKit)
+public extension NSImage {
+    static func socialSymbol(_ logo: SocialLogo) -> NSImage? {
+        NSImage(symbolName: logo.assetName, bundle: .module, variableValue: 0)
+    }
+
+    static func socialSymbol(named name: String) -> NSImage? {
+        guard let logo = SocialLogo.resolve(name) else {
+            return nil
+        }
+
+        return socialSymbol(logo)
+    }
+}
+#endif

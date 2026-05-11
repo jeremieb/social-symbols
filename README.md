@@ -4,7 +4,7 @@ Social media and community logos shipped as SF Symbols through a Swift Package.
 
 ## Installation
 
-Add this repository as a Swift Package dependency in Xcode or in `Package.swift`, then import `SocialSymbols` anywhere you use SwiftUI.
+Add this repository as a Swift Package dependency in Xcode or in `Package.swift`, then import `SocialSymbols` in SwiftUI, UIKit, or AppKit code.
 
 ## Usage
 
@@ -38,6 +38,30 @@ The package returns ordinary SwiftUI `Image`-backed symbol views, so standard mo
 - `.foregroundColor(...)`
 - `.foregroundStyle(...)`
 - `.font(...)`
+
+## UIKit
+
+```swift
+import SocialSymbols
+import UIKit
+
+let facebook = UIImage.socialSymbol(.facebook)
+let linkedin = UIImage.socialSymbol(named: "LinkedIn")
+```
+
+The UIKit API returns `nil` when a string name does not resolve or when the packaged asset cannot be loaded.
+
+## AppKit
+
+```swift
+import AppKit
+import SocialSymbols
+
+let facebook = NSImage.socialSymbol(.facebook)
+let linkedin = NSImage.socialSymbol(named: "LinkedIn")
+```
+
+The AppKit API returns `nil` when a string name does not resolve or when the packaged asset cannot be loaded.
 
 Unknown string names fall back to `questionmark.square.dashed`, and debug builds assert so bad names are easy to catch during development.
 
