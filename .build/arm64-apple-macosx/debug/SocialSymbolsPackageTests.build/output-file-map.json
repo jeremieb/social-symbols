@@ -1,0 +1,12 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/primary.swiftdeps"
+  },
+  "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.derived/runner.swift": {
+    "dependencies": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/runner.d",
+    "object": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/runner.swift.o",
+    "swiftmodule": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/runner~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/runner.swiftdeps",
+    "diagnostics": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/runner.dia"
+  }
+}

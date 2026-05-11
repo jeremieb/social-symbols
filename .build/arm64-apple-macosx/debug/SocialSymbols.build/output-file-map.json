@@ -1,0 +1,19 @@
+{
+  "": {
+    "swift-dependencies": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/primary.swiftdeps"
+  },
+  "/Users/jeremieberduck/Developer/social-symbols/Sources/SocialSymbols/SocialSymbol.swift": {
+    "dependencies": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/SocialSymbol.d",
+    "object": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/SocialSymbol.swift.o",
+    "swiftmodule": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/SocialSymbol~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/SocialSymbol.swiftdeps",
+    "diagnostics": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/SocialSymbol.dia"
+  },
+  "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/DerivedSources/resource_bundle_accessor.swift": {
+    "dependencies": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/resource_bundle_accessor.d",
+    "object": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/resource_bundle_accessor.swift.o",
+    "swiftmodule": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/resource_bundle_accessor~partial.swiftmodule",
+    "swift-dependencies": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/resource_bundle_accessor.swiftdeps",
+    "diagnostics": "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/resource_bundle_accessor.dia"
+  }
+}

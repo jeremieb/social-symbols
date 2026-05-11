@@ -1,0 +1,638 @@
+{
+  "builtTestProducts" : [
+    {
+      "binaryPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.xctest/Contents/MacOS/SocialSymbolsPackageTests",
+      "packagePath" : "/Users/jeremieberduck/Developer/social-symbols",
+      "productName" : "SocialSymbolsPackageTests"
+    }
+  ],
+  "copyCommands" : {
+    "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols_SocialSymbols.bundle/Assets.xcassets" : {
+      "inputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/Sources/SocialSymbols/Resources/Assets.xcassets"
+        }
+      ],
+      "outputs" : [
+        {
+          "kind" : "directory",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols_SocialSymbols.bundle/Assets.xcassets"
+        }
+      ]
+    }
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.SocialSymbols-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/sources",
+      "importPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/Sources/SocialSymbols/SocialSymbol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/DerivedSources/resource_bundle_accessor.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "virtual",
+          "name" : "<SocialSymbols-arm64-apple-macosx-debug.module-resources>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SocialSymbols",
+      "moduleOutputPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules/SocialSymbols.swiftmodule",
+      "objects" : [
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/SocialSymbol.swift.o",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/resource_bundle_accessor.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.1",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j11",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+        "-module-cache-path",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/include/SocialSymbols-Swift.h",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "social_symbols"
+      ],
+      "outputFileMapPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/SocialSymbol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules/SocialSymbols.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/jeremieberduck/Developer/social-symbols/Sources/SocialSymbols/SocialSymbol.swift",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/DerivedSources/resource_bundle_accessor.swift"
+      ],
+      "tempsPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SocialSymbolsPackageTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/sources",
+      "importPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.derived/runner.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules/SocialSymbolsTests.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SocialSymbolsPackageTests",
+      "moduleOutputPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules/SocialSymbolsPackageTests.swiftmodule",
+      "objects" : [
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/runner.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx13.1",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j11",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-emit-objc-header",
+        "-emit-objc-header-path",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/include/SocialSymbolsPackageTests-Swift.h",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "social_symbols"
+      ],
+      "outputFileMapPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules/SocialSymbolsPackageTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.derived/runner.swift"
+      ],
+      "tempsPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build",
+      "wholeModuleOptimization" : false
+    },
+    "C.SocialSymbolsTests-arm64-apple-macosx-debug.module" : {
+      "executable" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "fileList" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsTests.build/sources",
+      "importPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/Tests/SocialSymbolsTests/SocialSymbolsTests.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules/SocialSymbols.swiftmodule"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsTests.build/sources"
+        }
+      ],
+      "isLibrary" : true,
+      "moduleName" : "SocialSymbolsTests",
+      "moduleOutputPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules/SocialSymbolsTests.swiftmodule",
+      "objects" : [
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsTests.build/SocialSymbolsTests.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "arm64-apple-macosx14.0",
+        "-incremental",
+        "-enable-batch-mode",
+        "-serialize-diagnostics",
+        "-index-store-path",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-Xfrontend",
+        "-enable-cross-import-overlays",
+        "-j11",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+        "-module-cache-path",
+        "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/ModuleCache",
+        "-parseable-output",
+        "-parse-as-library",
+        "-swift-version",
+        "5",
+        "-plugin-path",
+        "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+        "-sdk",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-F",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-I",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-L",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+        "-g",
+        "-Xcc",
+        "-isysroot",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+        "-Xcc",
+        "-F",
+        "-Xcc",
+        "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "social_symbols"
+      ],
+      "outputFileMapPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsTests.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsTests.build/SocialSymbolsTests.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules/SocialSymbolsTests.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/Users/jeremieberduck/Developer/social-symbols/Tests/SocialSymbolsTests/SocialSymbolsTests.swift"
+      ],
+      "tempsPath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsTests.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "SocialSymbols" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SocialSymbols",
+      "-package-name",
+      "social_symbols",
+      "-c",
+      "/Users/jeremieberduck/Developer/social-symbols/Sources/SocialSymbols/SocialSymbol.swift",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/DerivedSources/resource_bundle_accessor.swift",
+      "-I",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.1",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j11",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_AVAILABLE",
+      "-module-cache-path",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/include/SocialSymbols-Swift.h",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "social_symbols",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SocialSymbolsPackageTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SocialSymbolsPackageTests",
+      "-package-name",
+      "social_symbols",
+      "-c",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.derived/runner.swift",
+      "-I",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx13.1",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j11",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-emit-objc-header",
+      "-emit-objc-header-path",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/include/SocialSymbolsPackageTests-Swift.h",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "social_symbols",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ],
+    "SocialSymbolsTests" : [
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc",
+      "-module-name",
+      "SocialSymbolsTests",
+      "-package-name",
+      "social_symbols",
+      "-c",
+      "/Users/jeremieberduck/Developer/social-symbols/Tests/SocialSymbolsTests/SocialSymbolsTests.swift",
+      "-I",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/Modules",
+      "-target",
+      "arm64-apple-macosx14.0",
+      "-incremental",
+      "-enable-batch-mode",
+      "-serialize-diagnostics",
+      "-index-store-path",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-Xfrontend",
+      "-enable-cross-import-overlays",
+      "-j11",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-DSWIFT_MODULE_RESOURCE_BUNDLE_UNAVAILABLE",
+      "-module-cache-path",
+      "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/ModuleCache",
+      "-parseable-output",
+      "-parse-as-library",
+      "-swift-version",
+      "5",
+      "-plugin-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/host/plugins/testing",
+      "-sdk",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-F",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-I",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-L",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/usr/lib",
+      "-g",
+      "-Xcc",
+      "-isysroot",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk",
+      "-Xcc",
+      "-F",
+      "-Xcc",
+      "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "social_symbols",
+      "-driver-use-frontend-path",
+      "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "SocialSymbols" : [
+
+    ],
+    "SocialSymbolsPackageTests" : [
+      "SocialSymbolsTests",
+      "SocialSymbols"
+    ],
+    "SocialSymbolsTests" : [
+      "SocialSymbols"
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+    "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.derived/runner.swift" : {
+      "inputs" : [
+
+      ],
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.derived/runner.swift"
+        }
+      ]
+    }
+  },
+  "traitConfiguration" : {
+    "default" : {
+
+    }
+  },
+  "writeCommands" : {
+    "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/Sources/SocialSymbols/SocialSymbol.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/DerivedSources/resource_bundle_accessor.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/sources"
+    },
+    "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.derived/runner.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/sources"
+    },
+    "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/SocialSymbol.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbols.build/resource_bundle_accessor.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.build/runner.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsTests.build/SocialSymbolsTests.swift.o"
+        }
+      ],
+      "outputFilePath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsPackageTests.product/Objects.LinkFileList"
+    },
+    "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsTests.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Users/jeremieberduck/Developer/social-symbols/Tests/SocialSymbolsTests/SocialSymbolsTests.swift"
+        }
+      ],
+      "outputFilePath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/SocialSymbolsTests.build/sources"
+    },
+    "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/Users/jeremieberduck/Developer/social-symbols/.build/arm64-apple-macosx/debug/swift-version--58304C5D6DBC2206.txt"
+    }
+  }
+}

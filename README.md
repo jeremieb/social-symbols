@@ -1,93 +1,185 @@
-# Logos as SF Symbols
+# SocialSymbols
 
-## How to use
+Social media and community logos shipped as SF Symbols through a Swift Package.
 
-1. From Xcode, just add a new "Symbol Image Set" in your Assets catalog.
-2. Then import the symbol directly and start to use it.
+## Installation
 
-<img width="1806" alt="Screenshot 2023-02-05 at 18 03 59" src="https://user-images.githubusercontent.com/736246/216836517-91371c18-e8ed-4085-9a26-929a2ee185ca.png">
+Add this repository as a Swift Package dependency in Xcode or in `Package.swift`, then import `SocialSymbols` anywhere you use SwiftUI.
 
-## Available logos
+## Usage
 
-### Bluesky
-- Multicolor rendering with official colors.
+```swift
+import SocialSymbols
+import SwiftUI
 
-### Discord
-- Filled and outlined supporting hierarchical rendering.
-- Multicolor rendering with official colors.
+struct ProfileLinks: View {
+    var body: some View {
+        VStack(spacing: 24) {
+            SocialSymbol(logo: "Facebook")
+                .symbolRenderingMode(.hierarchical)
+                .foregroundStyle(.blue)
+                .font(.largeTitle)
 
-### Discourse
-- Filled version only.
-- Multicolor rendering with official colors.
+            SocialSymbol(.instagram)
+                .symbolRenderingMode(.palette)
+                .foregroundStyle(.pink, .orange, .purple)
+                .font(.title)
+        }
+    }
+}
+```
 
-### Facebook
-- Supporting hierarchical rendering.
-- Multicolor rendering with official colors.
+The package returns ordinary SwiftUI `Image`-backed symbol views, so standard modifiers continue to work:
 
-### GitHub
-- Supporting hierarchical rendering.
-- Multicolor rendering with official colors.
+- `.symbolRenderingMode(.monochrome)`
+- `.symbolRenderingMode(.hierarchical)`
+- `.symbolRenderingMode(.palette)`
+- `.symbolRenderingMode(.multicolor)`
+- `.foregroundColor(...)`
+- `.foregroundStyle(...)`
+- `.font(...)`
 
-### Instagram
-- Supporting hierarchical rendering.
-- Multicolor rendering with the pink Instagram color.
-- Please use the palette rendering to create a gradient reproducing the official brand.
+Unknown string names fall back to `questionmark.square.dashed`, and debug builds assert so bad names are easy to catch during development.
 
-### LinkedIn
-- Multicolor rendering with the pink Instagram color.
+## Contributing a New Logo
 
-### Made in Amsterdam
-- Custom made badge
+If you want to add a new brand logo to the package, follow this exact workflow.
 
-### Mastodon
-- Cleaned logo version (the one from joinmastodon.org).
-- Multicolor rendering with official colors.
+### 1. Add the original source SVG
 
-### Matrix
-- Multicolor rendering with official colors.
+Store the raw source file under `SVGFiles` in a folder named after the logo.
 
-### Microblog
-- Multicolor rendering with official colors.
+Examples:
 
-### Reddit
-- Filled and outlined supporting hierarchical rendering.
-- Multicolor rendering with official colors.
+- `SVGFiles/facebook/facebook.svg`
+- `SVGFiles/reddit/reddit.fill.svg`
+- `SVGFiles/tiktok/tiktok-official.svg`
 
-### Slack
-- Multicolor rendering with official colors.
+Keep the filename aligned with the symbol name you want to expose in the package.
 
-### Telegram
-- Multicolor rendering with official colors.
+### 2. Add the package symbol asset
 
-### Threads
-- Multicolor rendering with official colors.
+The Swift Package does not read directly from `SVGFiles`. It ships assets from:
 
-### Tiktok
-- Filled version
-- Multicolored version with official colors.
+- `Sources/SocialSymbols/Resources/Assets.xcassets/symbols`
 
-### Twitch
-- Supporting hierarchical rendering.
-- Multicolor rendering with official colors.
+Create a new symbol set folder there:
 
-### Twitter
-- Supporting hierarchical rendering.
-- Multicolor rendering with official colors.
+- `Sources/SocialSymbols/Resources/Assets.xcassets/symbols/<symbol-name>.symbolset`
 
-### Dead Tweetie
-- Supporting hierarchical rendering.
+Then add:
 
-### YouTube
-- Filled and outlined supporting hierarchical rendering.
-- Multicolor rendering with official colors.
+- the SVG file itself
+- a `Contents.json` file matching the existing symbol set format
+
+Example layout:
+
+```text
+Sources/SocialSymbols/Resources/Assets.xcassets/symbols/snapchat.symbolset/
+├── Contents.json
+└── snapchat.svg
+```
+
+The simplest approach is to copy an existing `.symbolset` folder and adapt it.
+
+### 3. Register the logo in Swift
+
+Update [SocialSymbol.swift](/Users/jeremieberduck/Developer/social-symbols/Sources/SocialSymbols/SocialSymbol.swift) so the new symbol is available through the public API.
+
+Add:
+
+- a new `SocialLogo` case
+- the correct `displayName`
+- any string aliases needed for friendly lookup
+
+If your symbol name contains punctuation such as `.fill` or `-`, map it to a Swift-safe enum case and keep the original asset name in the raw value.
+
+### 4. Update the README logo list
+
+Add the new logo name to the `Available Logos` section in this file so package users can discover it.
+
+### 5. Verify it locally
+
+Run the package tests:
+
+```bash
+swift test
+```
+
+Then open the demo app project:
+
+- `AppShowcase/AppShowcase.xcodeproj`
+
+Run the `AppShowcase` scheme and confirm the symbol:
+
+- renders correctly
+- works with monochrome, hierarchical, palette, and multicolor modes where applicable
+- scales correctly with `.font(...)`
+- behaves correctly with `.foregroundColor(...)` or `.foregroundStyle(...)`
+
+If the logo should appear in the demo list, also update [ViewModel.swift](/Users/jeremieberduck/Developer/social-symbols/AppShowcase/ViewModel.swift) or any related showcase code if needed.
+
+### 6. Open a pull request
+
+Your pull request should include:
+
+- the raw SVG in `SVGFiles`
+- the packaged symbol asset in `Sources/SocialSymbols/Resources/Assets.xcassets/symbols`
+- the Swift API update in `SocialSymbol.swift`
+- the README update
+
+In the PR description, include:
+
+- the brand or logo name
+- whether this is a new logo or a variant like `.fill`
+- screenshots from `AppShowcase` if the visual behavior is non-obvious
+- any notes about rendering mode support, such as hierarchical-only or multicolor branding
+
+### Contribution Checklist
+
+- Raw SVG added under `SVGFiles`
+- Matching `.symbolset` added under `Sources/SocialSymbols/Resources/Assets.xcassets/symbols`
+- `SocialLogo` updated
+- Friendly string lookup updated if needed
+- README updated
+- `swift test` passes
+- `AppShowcase` renders the new symbol correctly
+
+## Available Logos
+
+- Bluesky
+- Discord
+- Discord.fill
+- Discourse.fill
+- Facebook
+- GitHub
+- Instagram
+- Ko-fi
+- LinkedIn
+- Made In Amsterdam
+- Mastodon
+- Mastodon.fill
+- Mastodon Clean
+- Mastodon Clean.fill
+- Matrix
+- Micro.blog
+- Patreon
+- Reddit
+- Reddit.fill
+- Slack
+- Snapchat
+- Snapchat.fill
+- Telegram
+- Threads
+- TikTok
+- TikTok Official
+- Tweetie
+- Twitch
+- Twitter
+- X-Twitter
+- YouTube
+- YouTube.fill
 
 ## License
-Social Symbol is available under the Apache-2.0 license.
 
-
-    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-    FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-    COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+SocialSymbols is available under the Apache-2.0 license.
