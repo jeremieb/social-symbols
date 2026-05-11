@@ -24,7 +24,7 @@ public struct SocialSymbol: View {
     public var body: some View {
         Group {
             if let resolvedLogo {
-                Image(resolvedLogo.assetName, bundle: .module)
+                resolvedLogo.image
             } else {
                 Image(systemName: Self.fallbackSystemImageName)
             }
@@ -53,6 +53,8 @@ public enum SocialLogo: String, CaseIterable {
     case reddit
     case redditFill = "reddit.fill"
     case slack
+    case snapchat
+    case snapchatFill = "snapchat.fill"
     case telegram
     case threads
     case tiktok
@@ -66,6 +68,24 @@ public enum SocialLogo: String, CaseIterable {
 
     public var assetName: String {
         rawValue
+    }
+
+    var image: Image {
+        #if canImport(UIKit)
+        if let uiImage = UIImage(named: assetName, in: .module, compatibleWith: nil) {
+            Image(uiImage: uiImage)
+        } else {
+            Image(systemName: SocialSymbol.fallbackSystemImageName)
+        }
+        #elseif canImport(AppKit)
+        if let nsImage = Bundle.module.image(forResource: assetName) {
+            Image(nsImage: nsImage)
+        } else {
+            Image(systemName: SocialSymbol.fallbackSystemImageName)
+        }
+        #else
+        Image(assetName, bundle: .module)
+        #endif
     }
 
     public var displayName: String {
@@ -110,6 +130,10 @@ public enum SocialLogo: String, CaseIterable {
             "Reddit.fill"
         case .slack:
             "Slack"
+        case .snapchat:
+            "Snapchat"
+        case .snapchatFill:
+            "Snapchat.fill"
         case .telegram:
             "Telegram"
         case .threads:
@@ -171,6 +195,8 @@ public enum SocialLogo: String, CaseIterable {
             aliases.append("Micro Blog")
         case .redditFill:
             aliases.append("Reddit Fill")
+        case .snapchatFill:
+            aliases.append("Snapchat Fill")
         case .tiktokOfficial:
             aliases.append("TikTokOfficial")
         case .xTwitter:
