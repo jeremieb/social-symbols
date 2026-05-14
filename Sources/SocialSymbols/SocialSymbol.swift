@@ -56,6 +56,7 @@ public enum SocialLogo: String, CaseIterable {
     case matrix
     case microblog
     case patreon
+    case pixelfed
     case reddit
     case redditFill = "reddit.fill"
     case slack
@@ -71,6 +72,7 @@ public enum SocialLogo: String, CaseIterable {
     case xTwitter = "x-twitter"
     case youtube
     case youtubeFill = "youtube.fill"
+    case whatsapp
 
     public var assetName: String {
         rawValue
@@ -130,6 +132,8 @@ public enum SocialLogo: String, CaseIterable {
             "Micro.blog"
         case .patreon:
             "Patreon"
+        case .pixelfed:
+            "Pixelfed"
         case .reddit:
             "Reddit"
         case .redditFill:
@@ -160,6 +164,8 @@ public enum SocialLogo: String, CaseIterable {
             "YouTube"
         case .youtubeFill:
             "YouTube.fill"
+        case .whatsapp:
+            "WhatsApp"
         }
     }
 
