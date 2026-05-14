@@ -5,8 +5,11 @@ import PackageDescription
 let package = Package(
     name: "SocialSymbols",
     platforms: [
-        .iOS("16.2"),
-        .macOS("13.1")
+        .iOS("16.0"),
+        .macOS("13.0"),
+        .tvOS("16.0"),
+        .watchOS("9.0"),
+        .visionOS("1.0")
     ],
     products: [
         .library(
